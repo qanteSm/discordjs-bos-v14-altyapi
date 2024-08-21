@@ -1,0 +1,16 @@
+{
+  "name": "qantesm-discordjs-bos-v14-altyapi",
+  "version": "1.0.0",
+  "description": "Discord.js v14 sürümü için boş bot altyapısı!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "QanteSm",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^2.3.0",
+    "discord.js": "^14.15.3",
+    "moment": "^2.30.1"
+  }
+}
