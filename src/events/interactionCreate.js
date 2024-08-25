@@ -1,7 +1,7 @@
 const { EmbedBuilder, InteractionType } = require("discord.js");
 const { readdirSync } = require("fs");
 const { owner } = require("../../config.js");
-const commandFiles = readdirSync("./src/commands").filter((file) =>
+const commandFiles = readdirSync("./src/commands/slash").filter((file) =>
   file.endsWith(".js")
 );
 
@@ -13,7 +13,7 @@ module.exports = {
     if (interaction.user.bot) return;
 
     for (const file of commandFiles) {
-      const command = require(`../../src/commands/${file}`);
+      const command = require(`../../src/commands/slash/${file}`);
       if (
         interaction.commandName.toLowerCase() ===
         command.data.name.toLowerCase()
